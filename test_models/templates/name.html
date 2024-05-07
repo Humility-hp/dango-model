@@ -1,0 +1,17 @@
+<form action="/form" method="POST">
+{% csrf_token %}
+<input type="submit" value="Submit">
+{{ form.non_field_errors }}
+<div class="first-two">
+ {{ form.subject }}
+</div>
+</form>
+<style>
+ .first-two{
+  background-color:aqua;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content: center
+ }
+</style>
